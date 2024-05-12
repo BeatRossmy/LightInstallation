@@ -41,7 +41,6 @@ public:
   virtual void draw(Canvas3D<PIXELWIDTH,PIXELHEIGHT>* c) {
     for (int i = 0; i < 30; i++) particles[i].move(PIXELWIDTH,PIXELHEIGHT);
     for (int i = 0; i < 30; i++) {
-      //for (int y=0; y<PIXELHEIGHT; y++) particles[i].draw(c,y);
       particles[i].draw(c);
     }
   }
